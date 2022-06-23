@@ -1,0 +1,80 @@
+= Lets Code Typescript
+Exploring Typescript concepts and utitlites 🚀
+
+== Prerequisites
+
+- node / npm
+- IDE of your choice :-)
+
+== Setup
+
+. Create a new npm project `npm init`
+. Install Typescript: `npm i -D typescript`
+. Initialize your tsconfig `npx tsc --init`
+. Run the typescript compiler `npx tsc`
+
+== Demo
+
+. Ducktyping (Structural Typing)
+. Type Inferrence
+
+== Tasks
+
+[NOTE]
+====
+.Some useful links
+- https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types[Unions and Intersections]
+- https://www.typescriptlang.org/docs/handbook/utility-types.html[Typescript Docs]
+
+====
+
+=== Union Types 
+
+. Create a type *Creature* that could either be a Person or an Animal.
+. Create a function *greet* of type `(creature: Creature) => string` that returns a greeting including name (in case an Animal was passed) or first & lastName (in case a Person was passed)
+
+=== Intersection Types
+
+Create a type *Alien* that has the properties of both Persons and Animals.
+
+=== Pick
+
+Create a type *Appearance* includes _size_ and _age_ of a Person.
+
+=== Omit
+
+Create a type *Fly* that as all properties of an Animal except for it's size.
+
+=== Partial
+
+Create a type *NewPerson* that has the properties of a Person but each property is optional.
+
+=== Record
+
+Create a Type *Enclosures* for an object that maps a number to an Animal name.
+
+.Example object
+[source,typescript]
+----
+const enclosures: Enclosures = {
+    1: "Nemo",
+    2: "Willy",
+    3: "Dolly",
+    4: "Harambe",
+    5: "Grumpy Cat"
+}
+----
+
+
+== Type Challenges
+
+[NOTE]
+====
+You should definitely start with easy!
+====
+
+https://github.com/type-challenges/type-challenges[Type Challenges]
+
+== Other Advanced Examples
+
+https://www.youtube.com/playlist?list=PLIvujZeVDLMx040-j1W4WFs1BxuTGdI_b[Advanced Typescript Videos]
